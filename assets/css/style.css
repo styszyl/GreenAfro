@@ -111,6 +111,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgb(0, 0, 0);
 }
 
 #header.header-scrolled,
@@ -432,7 +433,7 @@ h6 {
   position: relative;
 }
 
-#hero:before {
+/* #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -440,12 +441,54 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
+} */
+
+.Front_Page__window {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inknut Antiqua", serif;
+  background-color: white;
+  width: 300px;
+  height: 370px;
+  margin: 160px 40px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  box-shadow: black 2px 3px 50px;
 }
 
+.Front_Page__paragraph {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  letter-spacing: 6px;
+}
+
+.Front_Page__button {
+  border: 2px solid black;
+  color: black;
+  margin: 10px 0;
+  padding: 20px;
+  width: 200px;
+  background-color: white;
+  transition: linear 0.3s;
+  text-align: center;
+  font-size: 20px
+}
+
+.Front_Page__button:hover {
+  background-color: #bef3e0;
+  color:black;
+}
+
+
 #hero .container {
+  margin-left:30px;
+  background-color: white;
+  border: 2px solid black;
   padding-top: 72px;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 #hero h1 {
@@ -453,7 +496,7 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: black;
 }
 
 #hero h2 {
@@ -526,6 +569,12 @@ h6 {
   z-index: 200;
   animation: none;
   border-radius: 0;
+}
+
+@media (width < 700px) {
+  .Front_Page__window {
+    margin: auto;
+  }
 }
 
 @media (min-width: 1024px) {
