@@ -447,10 +447,10 @@ h6 {
   display: flex;
   flex-direction: column;
   font-family: "Inknut Antiqua", serif;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
+  margin: 160px 40px;
   width: 300px;
   height: 370px;
-  margin: 160px 40px;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
@@ -458,6 +458,7 @@ h6 {
 }
 
 .Front_Page__paragraph {
+  color: black;
   text-align: center;
   font-size: 30px;
   padding: 10px;
@@ -572,9 +573,22 @@ h6 {
 }
 
 @media (width < 700px) {
-  .Front_Page__window {
-    margin: auto;
+
+  .Front_Page__container {
+    /* opacity: 0.6; */
   }
+  .Front_Page__window {
+    margin: 50px auto 10px auto;
+    background-color: hsla(0, 0%, 100%, 80%);
+  }
+  .Front_Page__paragraph {
+    /* opacity: 1; */
+  }
+
+  .Front_Page__button {
+    background-color: hsla(0, 0%, 100%, 70%);
+  }
+
 }
 
 @media (min-width: 1024px) {
