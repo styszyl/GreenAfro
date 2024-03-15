@@ -574,15 +574,9 @@ h6 {
 
 @media (width < 700px) {
 
-  .Front_Page__container {
-    /* opacity: 0.6; */
-  }
   .Front_Page__window {
     margin: 50px auto 10px auto;
     background-color: hsla(0, 0%, 100%, 80%);
-  }
-  .Front_Page__paragraph {
-    /* opacity: 1; */
   }
 
   .Front_Page__button {
@@ -666,6 +660,11 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+
+.onas__p {
+  font-size: 1.5em !important;
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
